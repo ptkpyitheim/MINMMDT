@@ -206,7 +206,7 @@ setTimeout(function(){
 
 $('#hint').click(function(e) {
   e.preventDefault();
-  $('#hintMsg').text("Use inspect tool in Chrome or Mozilla");
+  $('#hintMsg').text("There's something hidden on this page.");
   console.log("Password is: youfoundit!");
 });
 

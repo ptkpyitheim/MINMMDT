@@ -93,3 +93,8 @@ font-family: 'Indie Flower', cursive;
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
+
+
+  #exampleModal {
+      color: black;
+  }
