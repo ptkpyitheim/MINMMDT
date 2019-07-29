@@ -23,6 +23,9 @@ $('#yesornoform').submit(function(event) {
         if(time < releaseTime){
             $('#displayDate').text('Just be a little more patient...');
         }
+        else {
+            $(location).attr('href',"happybirthday.html");
+        }
     }
 });
 
@@ -30,4 +33,8 @@ $('#yesornoform').submit(function(event) {
 
 // $(document).ready(function() {
 //     alert("I'm in");
+// })
+
+// $("#submit").click(function() {
+//     $('#displayDate').fadeIn(9000);
 // })

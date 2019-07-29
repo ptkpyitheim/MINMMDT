@@ -160,6 +160,21 @@ document.ontouchstart = evt => birthday.onClick(evt)
 
   })()
 
+  // ;(function loop(){
+  // 	requestAnimationFrame(loop)
+
+  // 	let now = timestamp()
+  // 	let delta = now - then
+
+  //   then = now
+  //   birthday.update(delta / 1000)
+  	
+
+  // })()
+
+setTimeout(function(){
+    $('#down-arrow').show();// or fade, css display however you'd like.
+ }, 2000);
 
 
   $(document).ready(function() {
@@ -168,17 +183,18 @@ document.ontouchstart = evt => birthday.onClick(evt)
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
-        $('.hideme').each( function(i){
+        $('.text-in-box').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             /* If the object is completely visible in the window, fade it it */
             if( bottom_of_window > bottom_of_object ){
-                alert("bottom");
-                
-                $(this).animate({'opacity':'1'},500);
-                    
+                console.log("bottom");
+                // $(this).animate({'opacity':'1'},500);
+                $(this).addClass("animateMe");
+                $(this).addClass("text-in-box-show");
+
             }
             
         }); 
@@ -186,3 +202,14 @@ document.ontouchstart = evt => birthday.onClick(evt)
     });
     
 });
+
+
+// var element = $('.text-in-box');
+// $(window).scroll(function () {
+//   if($(window).scrollTop() > 0) {
+//     element.addClass("animateMe");
+//   }
+//   else {
+//     element.removeClass("animateMe");
+//   }
+// });
