@@ -206,7 +206,7 @@ setTimeout(function(){
 
 $('#hint').click(function(e) {
   e.preventDefault();
-  $('#hintMsg').text("There's something hidden on this page.");
+  $('#hintMsg').text("There's something hidden in this page.");
   console.log("Password is: youfoundit!");
 });
 
