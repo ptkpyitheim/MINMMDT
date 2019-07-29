@@ -71,10 +71,10 @@ font-family: 'Indie Flower', cursive;
   }
 
   .text-in-box.animateMe {
-    -webkit-animation: fadein 3s; /* Safari 4+ */
-    -moz-animation:    fadein 3s; /* Fx 5+ */
-    -o-animation:      fadein 3s; /* Opera 12+ */
-    animation:         fadein 3s; /* IE 10+, Fx 29+ */
+    -webkit-animation: fadein 4s; /* Safari 4+ */
+    -moz-animation:    fadein 4s; /* Fx 5+ */
+    -o-animation:      fadein 4s; /* Opera 12+ */
+    animation:         fadein 4s; /* IE 10+, Fx 29+ */
   }
 
   @-webkit-keyframes fadein {

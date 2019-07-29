@@ -204,12 +204,20 @@ setTimeout(function(){
 });
 
 
-// var element = $('.text-in-box');
-// $(window).scroll(function () {
-//   if($(window).scrollTop() > 0) {
-//     element.addClass("animateMe");
-//   }
-//   else {
-//     element.removeClass("animateMe");
-//   }
-// });
+$('#hint').click(function(e) {
+  e.preventDefault();
+  $('#hintMsg').text("Use inspect tool in Chrome or Mozilla");
+  console.log("Password is: youfoundit!");
+});
+
+$('#submitPwd').click(function(e) {
+  e.preventDefault();
+
+  if($('#pwdinput').val() === 'youfoundit!') {
+    $(location).attr('href',"Part2.html");
+  }
+  else {
+    alert("Password is incorrect!");
+    $('#pwdinput').val("");
+  }
+});
