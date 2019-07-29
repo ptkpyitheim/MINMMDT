@@ -11,6 +11,11 @@ body {
     margin-top: 100px;
 }
 
+#tooltip:hover {
+    cursor: pointer;
+    color: yellow;
+}
+
 /* #body {
     color: white;
     position:absolute;
