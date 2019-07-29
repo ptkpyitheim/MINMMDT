@@ -1,5 +1,6 @@
 
-var date = new Date();
+
+$('#tooltip').tooltip('show');
 
 
 var d = new Date();
